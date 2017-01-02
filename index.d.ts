@@ -1,7 +1,5 @@
-declare module global {
-    namespace jasmine{
-        interface Matchers {
-            toContainExactPath(expected: string): boolean;
-        }
+declare namespace jasmine {
+    interface Matchers {
+        toContainExactPath(expected: string): boolean;
     }
 }
