@@ -1,6 +1,6 @@
 {
   "name": "test-matchers",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Additional test matchers",
   "main": "./dist/index.js",
   "scripts": {
