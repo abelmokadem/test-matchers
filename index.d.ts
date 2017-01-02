@@ -6,4 +6,4 @@ declare global {
     }
 }
 
-export const jasmine : jasmine.CustomMatcherFactories;
+export const jasmineMatchers : jasmine.CustomMatcherFactories;
