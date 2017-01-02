@@ -1,15 +1,26 @@
 {
   "name": "test-matchers",
   "version": "0.0.5",
-  "description": "Additional jasmine matchers",
+  "description": "Additional test matchers",
   "main": "./dist/index.js",
   "scripts": {
     "build": "rimraf dist && babel src --ignore *.spec.js --out-dir dist",
     "prepublish": "npm run build",
     "test": "karma start"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abelmokadem/test-matchers"
+  },
+  "bugs": {
+    "url": "https://github.com/abelmokadem/test-matchers/issues"
+  },
+  "keywords": [
+    "jasmine",
+    "matchers"
+  ],
+  "author": "Ash Belmokadem <a.belmokadem@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "url": "^0.11.0"
   },
