@@ -1,8 +1,9 @@
 {
   "name": "test-matchers",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Additional test matchers",
   "main": "./dist/index.js",
+  "typings": "./index.d.ts",
   "scripts": {
     "build": "rimraf dist && babel src --ignore *.spec.js --out-dir dist",
     "npm-publish": "publish",
@@ -23,6 +24,7 @@
   "author": "Ash Belmokadem <a.belmokadem@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/jasmine": "^2.5.40",
     "url": "^0.11.0"
   },
   "devDependencies": {
