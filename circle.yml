@@ -22,12 +22,12 @@ dependencies:
 
 test:
   override:
-    - yarn test
+    - npm test
 
 deployment:
   npm:
       branch: master
       commands:
         # login using environment variables
-        - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | yarn login
-        - yarn run npm-publish
+        - echo -e "$NPM_USERNAME\n$NPM_PASSWORD\n$NPM_EMAIL" | npm login
+        - npm run npm-publish
