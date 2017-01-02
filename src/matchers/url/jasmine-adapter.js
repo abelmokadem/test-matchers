@@ -1,7 +1,7 @@
-import toContainExactPath from './exact-path';
+import { toContainExactPath } from './exact-path';
 
 export const urlMatchers = {
-    toContainExactPath: () => { compare: toContainExactPath }
+    toContainExactPath: () => {
+        compare: toContainExactPath
+    }
 };
-
-export default urlMatchers;

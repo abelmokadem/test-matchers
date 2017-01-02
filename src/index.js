@@ -1,7 +1,3 @@
-import jasmineMatchers from './matchers/jasmine';
+import { matchers as jasmineMatchers } from './matchers/jasmine';
 
-export const matchers = {
-    jasmine: jasmineMatchers
-};
-
-export default matchers;
+export const jasmine = jasmineMatchers;

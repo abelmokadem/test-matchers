@@ -1,6 +1,6 @@
 {
   "name": "test-matchers",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Additional test matchers",
   "main": "./dist/index.js",
   "typings": "./index.d.ts",
@@ -24,7 +24,6 @@
   "author": "Ash Belmokadem <a.belmokadem@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@types/jasmine": "^2.5.40",
     "url": "^0.11.0"
   },
   "devDependencies": {
