@@ -1,11 +1,23 @@
 import { createCustomMatcherFactory } from './jasmine-factory';
 
 describe('jasmine-factory', () => {
-    it('createCustomMatcherFactory should return function as', () => {
-        const matchers = {
-            foo: () => true
-        };
+    describe('createCustomMatcherFactory', () => {
+        it('should create functions that return an object with a compare key', () => {
+            const matchers = {
+                foo: () => true
+            };
 
-        expect(createCustomMatcherFactory(matchers).foo()).toEqual({pass: true});
+            expect(createCustomMatcherFactory(matchers).foo().hasOwnProperty('compare')).toBeTruthy();
+        });
+
+        it('should wrap functions in an object containing a pass key', () => {
+            const matchers = {
+                foo: () => true
+            };
+
+            expect(createCustomMatcherFactory(matchers).foo().compare()).toEqual({
+                pass: true
+            });
+        });
     });
 });
